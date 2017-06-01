@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.tedu.cloud_note_1.dao.DeleteNoteDao">
+ 	<update id="deleteNote" parameterType="String">
+ 		update cn_note 
+ 		<set>
+ 			cn_note_status_id = '2'
+ 		</set>
+ 		where cn_note_id = #{noteId}
+ 	</update>
+ </mapper>
