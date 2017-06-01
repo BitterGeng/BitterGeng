@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>  
-<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
- "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
- 
-<mapper namespace="com.tedu.cloud_note_1.dao.DeleteBookDao">
-	<delete id="deleteBookDao" parameterType="String">
-		delete from cn_notebook where cn_notebook_id=#{bookId}
-	</delete>
-</mapper>
