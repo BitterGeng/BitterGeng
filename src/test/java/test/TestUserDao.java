@@ -27,7 +27,7 @@ public class TestUserDao {
 			"userDao",UserDao.class);
 		User user = dao.findByName("demo1");
 		if(user!=null){
-			System.out.println("用户存在");
+			System.out.println("用户存在s");
 		}else{
 			System.out.println("用户不存在");
 		}
