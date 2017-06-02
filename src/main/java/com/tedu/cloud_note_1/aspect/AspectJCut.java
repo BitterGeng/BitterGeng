@@ -15,7 +15,7 @@ import com.tedu.cloud_note_1.util.NoteResult;
 @Component
 @Aspect //¶¨ÒåÇÐÃæÀà
 public class AspectJCut {
-	ppppppp
+	pppppppdd
 	private static Logger logger = LoggerFactory.getLogger(AspectJCut.class);
 
 	@Pointcut("execution(* com.tedu.cloud_note_1.controller..*(..))")
