@@ -13,8 +13,9 @@ import org.springframework.stereotype.Component;
 import com.tedu.cloud_note_1.entity.User;
 import com.tedu.cloud_note_1.util.NoteResult;
 @Component
-@Aspect //定义切面类
+@Aspect //露篓脪氓脟脨脙忙脌脿
 public class AspectJCut {
+	ppppppp
 	private static Logger logger = LoggerFactory.getLogger(AspectJCut.class);
 
 	@Pointcut("execution(* com.tedu.cloud_note_1.controller..*(..))")
@@ -22,13 +23,13 @@ public class AspectJCut {
 	
 	@Before("Test()")
 	public void before(){
-		logger.info("前置通知");
+		logger.info("脟掳脰脙脥篓脰陋");
 	}
 	
 	@SuppressWarnings("unchecked")
 	@Around("Test()")
 	public NoteResult<User> around(ProceedingJoinPoint  join){
-		logger.info("前置通知");
+		logger.info("脟掳脰脙脥篓脰陋");
 		NoteResult<User> rvt = null;
 		try {
 			 rvt=(NoteResult<User>) join.proceed();
@@ -37,13 +38,13 @@ public class AspectJCut {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		logger.info("后置通知");
+		logger.info("潞贸脰脙脥篓脰陋");
 		return rvt;
 	}
 	
 	@After("Test()")
 	public void after(){
-		logger.info("后置通知");
+		logger.info("潞贸脰脙脥篓脰陋");
 	}
 	
 }
